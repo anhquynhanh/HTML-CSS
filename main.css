@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    background-color: #eeeff1;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}  
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: none;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.logo div {
+    font-weight: 500;
+}
+
+.header-nav-div nav {
+    padding: 5px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-text {
+    display: inline-block;
+}
+
+.menu-text.show {
+    display: inline-block;
+}
+
+@media (max-width: 990px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
+    .menu-icon:hover + .menu-text {
+        display: inline-block;
+    }
+}
+
+button a {
+    color: white;
+    padding: 10px;
+}
+
+button {
+    background-color: black;
+    border-radius: 4px;
+    height: 35px;
+}
+
+main {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.human-1 {
+    width: 350px;
+    height: 367px;
+    margin-right: 80px;
+}
+
+.main_1 {
+    display: flex;
+    margin: 100px 0 140px;
+}
+
+.human-1-text {
+    font-size: 24px;
+    width: 500px;
+    padding-top: 50px;
+}
+
+.human-1-text h1 {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 990px) {
+    .main_1 {
+        flex-direction: column;
+    }
+}
+
+.main_2 {
+    width: 962px;
+    height: 1014px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_2-text {
+    padding-right: 60px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.main_2-text h1 {
+    margin: 20px 0 15px;
+}
+
+.main_2-text p {
+    margin-bottom: 50px;
+}
+
+.box {
+    padding-top: 64px;
+    width: 368px;
+}
+
+.box div {
+    display: inline-block;
+    padding: 3px 5px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: none;
+    text-decoration: none;
+    margin: 5px;
+}
+
+@media (max-width: 990px) {
+    .main_2 {
+        flex-direction: column;
+        width: 100vw;
+        margin-left: 175px;
+    }
+
+    .box {
+        width: 100vw;
+    }
+}
+
+.main_3 {
+    width: 962px;
+    height: 1014px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -500px;
+}
+
+.main_3-text {
+    display: flex;
+}
+
+.main_3-text>p {
+    font-size: 24px;
+}
+
+.main_3-text-title {
+    margin-right: 50px;
+}
+
+.main_3 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 990px) {
+    .main_3 {
+        top: -250px;
+        left: 100px;
+    }
+
+    .main_3-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_3-text p {
+        width: 100vw;
+    }
+}
+
+form {
+    border: 3px solid darkgray;
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+    top: -1000px;
+    display: flex;
+    width: 60vw;
+    justify-content:space-around;
+}
+
+form div {
+    margin: 5px;
+}
+
+form h1 {
+    width: 200px;
+    font-size: 55px;
+    margin: 40px;
+}
+
+.all {
+    width: fit-content;
+}
+
+.all_1 {
+    display: flex;
+}
+
+.all_1 input {
+    width: 200px;
+    height: 30px;
+}
+
+.name #name_id, .email #email_id, .mess #mess_id {
+    margin: 20px 10px;
+}
+
+label {
+    margin: 10px;
+}
+
+#mess_id {
+    width: 435px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    vertical-align: top;
+    overflow: auto;
+}
+
+.all button p {
+    color: white;
+    margin: 10px 12px;
+}
+
+.all button {
+    position: relative;
+    left: 15px;
+    border-radius: 10px;
+}
+
+@media (max-width: 990px) {
+    .all_1 {
+        flex-direction: column;
+    }
+}
+
+.ft-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-icon img {
+    width: 40px;
+    margin-left: 30px;
+}
+
+.link {
+    margin-right: 30px;
+}
+
+footer a {
+    color: grey;
+    margin: 7px;
+}
+
+footer p {
+    color: grey;
+    text-align: center;
+    margin: 20px;
+}
